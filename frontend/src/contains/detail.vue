@@ -1,4 +1,4 @@
-<template>
+<template>  
     <div style="padding: 50px 100px;">
         <div>
             id: {{this.id}}
