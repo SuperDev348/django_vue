@@ -1,1 +1,1 @@
-# django_vue
+# django_vueasdfasdf
