@@ -34,7 +34,7 @@
             
         },
         mounted: function() {
-            this.id = this.$route.params.id;
+            this.id = this.$route.params.id;    
             this.getItem();
         },
         data () {
