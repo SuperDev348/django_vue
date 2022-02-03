@@ -81,7 +81,8 @@
 <script>
     
     import { required, max } from 'vee-validate/dist/rules'
-    
+    import { extend, ValidationObserver, ValidationProvider } from 'vee-validate'
+    import axios from 'axios'
 
     extend('required', {
         ...required,
