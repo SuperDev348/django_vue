@@ -19,16 +19,7 @@
         components: {
         },
         methods : {
-            getItem : function(){
-                if(this.id != -1){
-                    axios.get(this.base_url+'/items/'+this.id)
-                    .then((response)=>{
-                        this.title = response.data.title;
-                        this.remark = response.data.remark;
-                        console.log(response);
-                    })
-                }
-            },
+            
         },
         computed : {
             

@@ -99,9 +99,6 @@
             ValidationProvider,
             ValidationObserver,
         },
-        computed : {
-            
-        },
         methods: {
             add : function(){
                 let data = {'title':this.title, 'remark':this.remark};
