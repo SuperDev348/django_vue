@@ -6,9 +6,6 @@
         <div>
             title: {{this.title}}
         </div>
-        <div>
-            remark: {{this.remark}}
-        </div>
     </div>
 </template>
 <script>
