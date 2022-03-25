@@ -15,11 +15,11 @@ def item_list(request):
 
         items = Item.objects.all()
         
-        # title = request.query_params.get('title', None)
-        # if title is not None:
-        #     items = items.filter(title__icontains=title)
+        title = request.query_params.get('title', None)
+        if title is not None:
+            items = items.filter(title__icontains=title)
         
-        # items_serializer = ItemSerializer(items, many=True)
+        items_serializer = ItemSerializer(items, many=True)
         return JsonResponse(items_serializer.data, safe=False)
         # 'safe=False' for objects serialization
  
