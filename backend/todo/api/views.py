@@ -25,13 +25,6 @@ def item_list(request):
  
     elif request.method == 'POST':
         print('item post')
-        item_data = JSONParser().parse(request)
-        print(item_data)
-        item_data['id'] = -1
-        item_serializer = ItemSerializer(data=item_data)
-        if item_serializer.is_valid():
-            item_serializer.save()
-            return JsonResponse(item_serializer.data, status=status.HTTP_201_CREATED) 
         return JsonResponse(item_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
     
     elif request.method == 'DELETE':
