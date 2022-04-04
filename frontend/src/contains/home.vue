@@ -32,6 +32,13 @@
                 ></v-textarea>
             </validation-provider>
 
+            <v-btn
+                class="mr-4"
+                @click="add"
+                color="success"
+            >
+                Add
+            </v-btn>
         </validation-observer>
         <v-simple-table>
             <template v-slot:default>
