@@ -5,6 +5,13 @@ import Detail from '../contains/detail.vue';
 
 Vue.use(VueRouter)
 
+// const requireAuth = (to, from, next) => {
+//   if (Auth.loggedIn()) return next()
+//   next({
+//     path: '/login',
+//     query: { redirect: to.fullPath }
+//   })
+// }
 
 export default new VueRouter({
     mode: 'history',
