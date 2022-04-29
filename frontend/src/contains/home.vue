@@ -18,19 +18,6 @@
                     required
                 ></v-text-field>
             </validation-provider>
-            <validation-provider
-                v-slot="{ errors }"
-                rules="required|max:500"
-                name="remark"
-            >
-                <v-textarea
-                v-model="remark"
-                :counter="500"
-                :error-messages="errors"
-                label="Remark"
-                required
-                ></v-textarea>
-            </validation-provider>
 
             <v-btn
                 class="mr-4"
