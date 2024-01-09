@@ -7,6 +7,19 @@
         >
             <validation-provider
                 v-slot="{ errors }"
+                rules="required|max:50"
+                name="title"
+            >
+                <v-text-field
+                    v-model="title"
+                    :counter="50"
+                    :error-messages="errors"
+                    label="Title"
+                    required
+                ></v-text-field>
+            </validation-provider>
+            <validation-provider
+                v-slot="{ errors }"
                 rules="required|max:500"
                 name="remark"
             >
