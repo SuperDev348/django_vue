@@ -30,6 +30,9 @@
                 }
             },
         },
+        computed : {
+            
+        },
         mounted: function() {
             this.id = this.$route.params.id;    
             this.getItem();
