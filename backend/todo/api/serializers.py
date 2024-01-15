@@ -8,5 +8,4 @@ class ItemSerializer(serializers.ModelSerializer):
         model = Item
         fields = (
                     'id',
-                    'title',
                     'remark',)
