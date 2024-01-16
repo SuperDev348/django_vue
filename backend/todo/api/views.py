@@ -41,11 +41,6 @@ def item_list(request):
  
 @api_view(['GET', 'PUT', 'DELETE'])
 def item_detail(request, pk):
-    try: 
-        item = Item.objects.get(pk=pk) 
-    except Item.DoesNotExist: 
-        return JsonResponse({'message': 'The item does not exist'}, status=status.HTTP_404_NOT_FOUND) 
- 
     if request.method == 'GET': 
         item_serializer = ItemSerializer(item) 
         return JsonResponse(item_serializer.data) 
